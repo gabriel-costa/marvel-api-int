@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="3.1"
+         metadata-complete="false">
+    <servlet>
+        <servlet-name>MarvelApiServlet</servlet-name>
+        <servlet-class>MarvelApiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MarvelApiServlet</servlet-name>
+        <url-pattern>/characters</url-pattern>
+    </servlet-mapping>
+</web-app>
