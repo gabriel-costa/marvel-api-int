@@ -1,136 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58d1d33e-2fde-4368-b58c-5a9dbffb2474" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Exercise7.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Exercise7.kt" afterDir="false" />
+    <list default="true" id="7f7bebdf-b04c-42c5-af57-3b6ba3c5c598" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Series.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Story.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CharacterDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Character.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Comic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Event.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Series.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Story.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/CharacterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kaffa-pre-qualification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kaffa-pre-qualification.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/Exercise8.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/META-INF/kaffa-pre-qualification.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/TodoList.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/geometric/forms/Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/geometric/forms/Rectangle.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise1Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise2Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise3Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise4Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise5Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise6Kt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/tomcatConfigs.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/marvel-api-int/MarvelApiServlet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarvelApiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarvelApiServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Image.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Url.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/CharacterDataContainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/CharacterDataWrapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/comic/ComicList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/comic/ComicSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/event/EventList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/event/EventSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/series/SeriesList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/series/SeriesSummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/story/StoryList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/story/StorySummary.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="GRADLE">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
-        <option value="Kotlin Class" />
+        <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1Ws6ruGgFY9csNUU5SaJhtsMJ6K" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1Y5P0ygURDchPYjTCrsdQ9CsWN8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../marvel-api-int" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/entity" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="com.poratu.idea.plugins.tomcat.setting.TomcatSettingConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="main.geometric.forms" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\src\main\kotlin" />
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\external-libs" />
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\src\main\resources" />
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\src\main" />
-      <recent name="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\src\main\forms" />
+      <recent name="C:\Users\gabriel\git-workspace\marvel-api-int\src\main\java\entity" />
+      <recent name="C:\Users\gabriel\git-workspace\marvel-api-int" />
     </key>
   </component>
-  <component name="RunManager" selected="Smart Tomcat.Tomcat">
-    <configuration name="main.Exercise2Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kaffa-pre-qualification.main" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.Exercise2Kt" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main.Exercise4Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kaffa-pre-qualification" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="marvel-api-int" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.Exercise4Kt" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main.Exercise5Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kaffa-pre-qualification" />
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="marvel-api-int" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.Exercise5Kt" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main.Exercise6Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kaffa-pre-qualification" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.Exercise6Kt" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="main.Exercise7Kt" type="JetRunConfigurationType" factoryName="Kotlin" temporary="true" nameIsGenerated="true">
-      <module name="kaffa-pre-qualification" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="main.Exercise7Kt" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,9 +135,9 @@
       <option name="adminPort" value="8005" />
       <option name="ajpPort" value="8009" />
       <option name="allowRunningInParallel" value="false" />
-      <option name="contextPath" value="/datetime" />
+      <option name="contextPath" value="/marvel-api-int" />
       <option name="customContext" value="" />
-      <option name="docBase" value="C:\Users\gabriel\git-workspace\kaffa-pre-qualification\src\main\webapp" />
+      <option name="docBase" value="C:\Users\gabriel\git-workspace\marvel-api-int\src\main\webapp" />
       <option name="envOptions" />
       <option name="moduleName" />
       <option name="passParentEnvironmentVariables" value="true" />
@@ -160,23 +155,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Kotlin.main.Exercise2Kt" />
-      <item itemvalue="Kotlin.main.Exercise4Kt" />
-      <item itemvalue="Kotlin.main.Exercise5Kt" />
-      <item itemvalue="Kotlin.main.Exercise6Kt" />
-      <item itemvalue="Kotlin.main.Exercise7Kt" />
-      <item itemvalue="Smart Tomcat.Tomcat" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Kotlin.main.Exercise5Kt" />
-        <item itemvalue="Kotlin.main.Exercise7Kt" />
-        <item itemvalue="Kotlin.main.Exercise6Kt" />
-        <item itemvalue="Kotlin.main.Exercise4Kt" />
-        <item itemvalue="Kotlin.main.Exercise2Kt" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -195,93 +173,70 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="58d1d33e-2fde-4368-b58c-5a9dbffb2474" name="Default Changelist" comment="" />
-      <created>1579926156305</created>
+      <changelist id="7f7bebdf-b04c-42c5-af57-3b6ba3c5c598" name="Default Changelist" comment="" />
+      <created>1582229262203</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1579926156305</updated>
+      <updated>1582229262203</updated>
     </task>
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="199" key="#Project_Structure" timestamp="1580078596334">
+    <state x="552" y="199" key="#Project_Structure" timestamp="1582230481340">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="552" y="199" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1580078596334" />
-    <state x="946" y="0" width="974" height="1080" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580269296142">
+    <state x="552" y="199" key="#Project_Structure/0.0.1920.1080@0.0.1920.1080" timestamp="1582230481340" />
+    <state x="414" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582231643922">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="946" y="0" width="974" height="1080" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580269296142" />
-    <state x="788" y="384" key="#com.intellij.ide.actions.DebugLogConfigureAction" timestamp="1580078782326">
+    <state x="414" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582231643922" />
+    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1582307501415">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="788" y="384" key="#com.intellij.ide.actions.DebugLogConfigureAction/0.0.1920.1080@0.0.1920.1080" timestamp="1580078782326" />
-    <state x="689" y="325" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1580251054904">
+    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582307501415" />
+    <state x="808" y="430" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582229482345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="689" y="325" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580251054904" />
-    <state x="808" y="430" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1580075105584">
+    <state x="808" y="430" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582229482345" />
+    <state x="790" y="251" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1582230437044">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="808" y="430" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580075105584" />
-    <state x="811" y="319" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog" timestamp="1580266243515">
+    <state x="790" y="251" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582230437044" />
+    <state x="690" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1582298147028">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="811" y="319" key="#com.intellij.openapi.roots.ui.configuration.libraryEditor.LibraryEditorDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580266243515" />
-    <state x="711" y="363" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog" timestamp="1580252750965">
+    <state x="690" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582298147028" />
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1582249208840">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="711" y="363" key="#com.intellij.util.ui.classpath.ChooseLibrariesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580252750965" />
-    <state x="739" y="193" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1580265962707">
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1582249208840" />
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1582255579296">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="739" y="193" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580265962707" />
-    <state x="740" y="287" key="FileChooserDialogImpl" timestamp="1582229260136">
+    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
+    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1582255579296">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="287" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1582229260136" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1582228129011">
+    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
+    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1582255579296">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582228129011" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1582228129011">
+    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
+    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1582255579296">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582228129011" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1582228129011">
+    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
+    <state x="440" y="115" key="SettingsEditor" timestamp="1582250032221">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582228129011" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1582228129011">
+    <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582250032221" />
+    <state x="656" y="138" width="607" height="804" key="find.popup" timestamp="1582250019175">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582228129011" />
-    <state x="646" y="307" key="NewModule_or_Project.wizard" timestamp="1580266026559">
+    <state x="656" y="138" width="607" height="804" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582250019175" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1582252027635">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="646" y="307" key="NewModule_or_Project.wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1580266026559" />
-    <state x="461" y="183" key="SettingsEditor" timestamp="1580270499304">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="461" y="183" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1580270499304" />
-    <state x="656" y="365" key="com.intellij.ide.util.TipDialog" timestamp="1580251089465">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="656" y="365" key="com.intellij.ide.util.TipDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580251089465" />
-    <state x="342" y="161" key="new project wizard" timestamp="1582220090300">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="342" y="161" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1582220090300" />
-    <state x="701" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1580152353269">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="701" y="184" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1580152353269" />
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1580157293544">
-      <screen x="0" y="0" width="1920" height="1080" />
-    </state>
-    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1580157293544" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582252027635" />
   </component>
 </project>

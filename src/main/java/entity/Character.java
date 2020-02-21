@@ -1,34 +1,24 @@
-package bean.character;
-
-import bean.*;
-import bean.comic.ComicList;
-import bean.event.EventList;
-import bean.series.SeriesList;
-import bean.story.StoryList;
+package entity;
 
 import java.util.Date;
 
-public class Character {
+public class Character extends Entity{
     private Integer id;
     private String name;
     private String description;
     private Date modified;
     private String resourceURI;
-    private Url[] urls;
-    private Image thumbnail;
-    private ComicList comics;
-    private StoryList stories;
-    private EventList events;
-    private SeriesList series;
+    private Integer[] comics;
+    private Integer[] stories;
+    private Integer[] events;
+    private Integer[] series;
 
-    public Character(Integer id, String name, String description, Date modified, String resourceURI, Url[] urls, Image thumbnail, ComicList comics, StoryList stories, EventList events, SeriesList series) {
+    public Character(Integer id, String name, String description, Date modified, String resourceURI, Integer[] comics, Integer[] stories, Integer[] events, Integer[] series) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.modified = modified;
         this.resourceURI = resourceURI;
-        this.urls = urls;
-        this.thumbnail = thumbnail;
         this.comics = comics;
         this.stories = stories;
         this.events = events;
@@ -75,51 +65,35 @@ public class Character {
         this.resourceURI = resourceURI;
     }
 
-    public Url[] getUrls() {
-        return urls;
-    }
-
-    public void setUrls(Url[] urls) {
-        this.urls = urls;
-    }
-
-    public Image getThumbnail() {
-        return thumbnail;
-    }
-
-    public void setThumbnail(Image thumbnail) {
-        this.thumbnail = thumbnail;
-    }
-
-    public ComicList getComics() {
+    public Integer[] getComics() {
         return comics;
     }
 
-    public void setComics(ComicList comics) {
+    public void setComics(Integer[] comics) {
         this.comics = comics;
     }
 
-    public StoryList getStories() {
+    public Integer[] getStories() {
         return stories;
     }
 
-    public void setStories(StoryList stories) {
+    public void setStories(Integer[] stories) {
         this.stories = stories;
     }
 
-    public EventList getEvents() {
+    public Integer[] getEvents() {
         return events;
     }
 
-    public void setEvents(EventList events) {
+    public void setEvents(Integer[] events) {
         this.events = events;
     }
 
-    public SeriesList getSeries() {
+    public Integer[] getSeries() {
         return series;
     }
 
-    public void setSeries(SeriesList series) {
+    public void setSeries(Integer[] series) {
         this.series = series;
     }
 }
