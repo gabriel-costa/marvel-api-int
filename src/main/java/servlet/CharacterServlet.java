@@ -8,6 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 public class CharacterServlet extends HttpServlet {
 
@@ -58,8 +59,10 @@ public class CharacterServlet extends HttpServlet {
                 }
             }
             writer.flush();
+        } catch (SQLException e) {
+            resp.sendError(500, e.getMessage()+" Please contact your administrator.");
         } catch (Exception e) {
-            System.out.println("");
+            resp.sendError(500, e.getMessage()+" Something got wrong! Please contact your administrator.");
         }
     }
 }
