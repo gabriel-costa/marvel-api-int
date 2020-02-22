@@ -1,17 +1,17 @@
-package entity;
+package bean.simple;
 
 import java.util.Date;
 
-public class Story extends Entity{
+public class CharacterSimple {
     private Integer id;
-    private String title;
+    private String name;
     private String description;
     private Date modified;
     private String resourceURI;
 
-    public Story(Integer id, String title, String description, Date modified, String resourceURI) {
+    public CharacterSimple(Integer id, String name, String description, Date modified, String resourceURI) {
         this.id = id;
-        this.title = title;
+        this.name = name;
         this.description = description;
         this.modified = modified;
         this.resourceURI = resourceURI;
@@ -25,12 +25,12 @@ public class Story extends Entity{
         this.id = id;
     }
 
-    public String getTitle() {
-        return title;
+    public String getName() {
+        return name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getDescription() {

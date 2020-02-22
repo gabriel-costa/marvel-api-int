@@ -10,10 +10,8 @@ public class Comic extends Entity{
     private String resourceURI;
     private Integer pageCount;
     private Integer series;
-    private Integer[] events;
-    private Integer[] stories;
 
-    public Comic(Integer id, String title, String description, Date modified, String resourceURI, Integer pageCount, Integer series, Integer[] stories, Integer[] events) {
+    public Comic(Integer id, String title, String description, Date modified, String resourceURI, Integer pageCount, Integer series) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -21,8 +19,6 @@ public class Comic extends Entity{
         this.resourceURI = resourceURI;
         this.pageCount = pageCount;
         this.series = series;
-        this.stories = stories;
-        this.events = events;
     }
 
     public Integer getId() {
@@ -79,21 +75,5 @@ public class Comic extends Entity{
 
     public void setSeries(Integer series) {
         this.series = series;
-    }
-
-    public Integer[] getStories() {
-        return stories;
-    }
-
-    public void setStories(Integer[] stories) {
-        this.stories = stories;
-    }
-
-    public Integer[] getEvents() {
-        return events;
-    }
-
-    public void setEvents(Integer[] events) {
-        this.events = events;
     }
 }

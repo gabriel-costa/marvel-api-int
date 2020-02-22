@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public interface DAO {
 
-    Entity getById(int id);
+    Entity getById(int id) throws SQLException;
 
     Entity[] getAll() throws SQLException;
 }

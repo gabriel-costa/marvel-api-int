@@ -1,101 +1,59 @@
 package bean;
 
-import java.util.Date;
+import bean.simple.*;
 
 public class Character {
-    private Integer id;
-    private String name;
-    private String description;
-    private Date modified;
-    private String resourceURI;
-    private Comic[] comics;
-    private Event[] events;
-    private Series[] series;
-    private Story[] stories;
+    private CharacterSimple characterSimple;
+    private ComicSimple[] comics;
+    private EventSimple[] events;
+    private SeriesSimple[] series;
+    private StorySimple[] stories;
 
-    public Character(Integer id, String name, String description, Date modified, String resourceURI, Comic[] comics, Event[] events, Series[] series, Story[] stories) {
-        this.id = id;
-        this.name = name;
-        this.description = description;
-        this.modified = modified;
-        this.resourceURI = resourceURI;
+    public Character(CharacterSimple characterSimple, ComicSimple[] comics, EventSimple[] events, SeriesSimple[] series, StorySimple[] stories) {
+        this.characterSimple = characterSimple;
         this.comics = comics;
         this.events = events;
         this.series = series;
         this.stories = stories;
     }
 
-    public Integer getId() {
-        return id;
+    public CharacterSimple getCharacterSimple() {
+        return characterSimple;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setCharacterSimple(CharacterSimple characterSimple) {
+        this.characterSimple = characterSimple;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Date getModified() {
-        return modified;
-    }
-
-    public void setModified(Date modified) {
-        this.modified = modified;
-    }
-
-    public String getResourceURI() {
-        return resourceURI;
-    }
-
-    public void setResourceURI(String resourceURI) {
-        this.resourceURI = resourceURI;
-    }
-
-    public Comic[] getComics() {
+    public ComicSimple[] getComics() {
         return comics;
     }
 
-    public void setComics(Comic[] comics) {
+    public void setComics(ComicSimple[] comics) {
         this.comics = comics;
     }
 
-    public Story[] getStories() {
-        return stories;
-    }
-
-    public void setStories(Story[] stories) {
-        this.stories = stories;
-    }
-
-    public Event[] getEvents() {
+    public EventSimple[] getEvents() {
         return events;
     }
 
-    public void setEvents(Event[] events) {
+    public void setEvents(EventSimple[] events) {
         this.events = events;
     }
 
-    public Series[] getSeries() {
+    public SeriesSimple[] getSeries() {
         return series;
     }
 
-    public void setSeries(Series[] series) {
+    public void setSeries(SeriesSimple[] series) {
         this.series = series;
     }
+
+    public StorySimple[] getStories() {
+        return stories;
+    }
+
+    public void setStories(StorySimple[] stories) {
+        this.stories = stories;
+    }
 }
-
-

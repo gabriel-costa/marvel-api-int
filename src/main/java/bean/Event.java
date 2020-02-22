@@ -1,109 +1,79 @@
 package bean;
 
-import java.util.Date;
+import bean.simple.*;
 
 public class Event {
-    private Integer id;
-    private String title;
-    private String description;
-    private Date modified;
-    private String resourceURI;
-    private Event next;
-    private Event previous;
-    private Comic[] comics;
-    private Story[] stories;
-    private Series[] series;
+    private EventSimple eventSimple;
+    private EventSimple next;
+    private EventSimple previous;
+    private CharacterSimple[] characters;
+    private ComicSimple[] comics;
+    private StorySimple[] stories;
+    private SeriesSimple[] series;
 
-    public Event(Integer id, String title, String description, Date modified, String resourceURI, Event next, Event previous, Comic[] comics, Story[] stories, Series[] series) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.modified = modified;
-        this.resourceURI = resourceURI;
+    public Event(EventSimple eventSimple, EventSimple next, EventSimple previous, CharacterSimple[] characters, ComicSimple[] comics, StorySimple[] stories, SeriesSimple[] series) {
+        this.eventSimple = eventSimple;
         this.next = next;
         this.previous = previous;
+        this.characters = characters;
         this.comics = comics;
         this.stories = stories;
         this.series = series;
     }
 
-    public Integer getId() {
-        return id;
+    public EventSimple getEventSimple() {
+        return eventSimple;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setEventSimple(EventSimple eventSimple) {
+        this.eventSimple = eventSimple;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Date getModified() {
-        return modified;
-    }
-
-    public void setModified(Date modified) {
-        this.modified = modified;
-    }
-
-    public String getResourceURI() {
-        return resourceURI;
-    }
-
-    public void setResourceURI(String resourceURI) {
-        this.resourceURI = resourceURI;
-    }
-
-    public Event getNext() {
+    public EventSimple getNext() {
         return next;
     }
 
-    public void setNext(Event next) {
+    public void setNext(EventSimple next) {
         this.next = next;
     }
 
-    public Event getPrevious() {
+    public EventSimple getPrevious() {
         return previous;
     }
 
-    public void setPrevious(Event previous) {
+    public void setPrevious(EventSimple previous) {
         this.previous = previous;
     }
 
-    public Comic[] getComics() {
+    public CharacterSimple[] getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(CharacterSimple[] characters) {
+        this.characters = characters;
+    }
+
+    public ComicSimple[] getComics() {
         return comics;
     }
 
-    public void setComics(Comic[] comics) {
+    public void setComics(ComicSimple[] comics) {
         this.comics = comics;
     }
 
-    public Story[] getStories() {
+    public StorySimple[] getStories() {
         return stories;
     }
 
-    public void setStories(Story[] stories) {
+    public void setStories(StorySimple[] stories) {
         this.stories = stories;
     }
 
-    public Series[] getSeries() {
+    public SeriesSimple[] getSeries() {
         return series;
     }
 
-    public void setSeries(Series[] series) {
+    public void setSeries(SeriesSimple[] series) {
         this.series = series;
     }
 }

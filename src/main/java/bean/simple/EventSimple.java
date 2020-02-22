@@ -1,15 +1,15 @@
-package entity;
+package bean.simple;
 
 import java.util.Date;
 
-public class Story extends Entity{
+public class EventSimple {
     private Integer id;
     private String title;
     private String description;
     private Date modified;
     private String resourceURI;
 
-    public Story(Integer id, String title, String description, Date modified, String resourceURI) {
+    public EventSimple(Integer id, String title, String description, Date modified, String resourceURI) {
         this.id = id;
         this.title = title;
         this.description = description;

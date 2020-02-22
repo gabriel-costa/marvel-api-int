@@ -3,11 +3,11 @@
 <web-app version="3.1"
          metadata-complete="false">
     <servlet>
-        <servlet-name>CharacterServlet</servlet-name>
-        <servlet-class>CharacterServlet</servlet-class>
+        <servlet-name>servlet.CharacterServlet</servlet-name>
+        <servlet-class>servlet.CharacterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>CharacterServlet</servlet-name>
+        <servlet-name>servlet.CharacterServlet</servlet-name>
         <url-pattern>/characters</url-pattern>
     </servlet-mapping>
 </web-app>

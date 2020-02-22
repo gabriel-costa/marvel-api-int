@@ -1,99 +1,59 @@
 package bean;
 
-import java.util.Date;
+import bean.simple.*;
 
 public class Comic {
-    private Integer id;
-    private String title;
-    private String description;
-    private Date modified;
-    private String resourceURI;
-    private Integer pageCount;
-    private Series series;
-    private Story[] stories;
-    private Event[] events;
+    private ComicSimple comicSimple;
+    private SeriesSimple series;
+    private CharacterSimple[] characters;
+    private EventSimple[] events;
+    private StorySimple[] stories;
 
-    public Comic(Integer id, String title, String description, Date modified, String resourceURI, Integer pageCount, Series series, Story[] stories, Event[] events) {
-        this.id = id;
-        this.title = title;
-        this.description = description;
-        this.modified = modified;
-        this.resourceURI = resourceURI;
-        this.pageCount = pageCount;
+    public Comic(ComicSimple comicSimple, SeriesSimple series, CharacterSimple[] characters, EventSimple[] events, StorySimple[] stories) {
+        this.comicSimple = comicSimple;
         this.series = series;
-        this.stories = stories;
+        this.characters = characters;
         this.events = events;
+        this.stories = stories;
     }
 
-    public Integer getId() {
-        return id;
+    public ComicSimple getComicSimple() {
+        return comicSimple;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setComicSimple(ComicSimple comicSimple) {
+        this.comicSimple = comicSimple;
     }
 
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public Date getModified() {
-        return modified;
-    }
-
-    public void setModified(Date modified) {
-        this.modified = modified;
-    }
-
-    public String getResourceURI() {
-        return resourceURI;
-    }
-
-    public void setResourceURI(String resourceURI) {
-        this.resourceURI = resourceURI;
-    }
-
-    public Integer getPageCount() {
-        return pageCount;
-    }
-
-    public void setPageCount(Integer pageCount) {
-        this.pageCount = pageCount;
-    }
-
-    public Series getSeries() {
+    public SeriesSimple getSeries() {
         return series;
     }
 
-    public void setSeries(Series series) {
+    public void setSeries(SeriesSimple series) {
         this.series = series;
     }
 
-    public Story[] getStories() {
-        return stories;
+    public CharacterSimple[] getCharacters() {
+        return characters;
     }
 
-    public void setStories(Story[] stories) {
-        this.stories = stories;
+    public void setCharacters(CharacterSimple[] characters) {
+        this.characters = characters;
     }
 
-    public Event[] getEvents() {
+    public EventSimple[] getEvents() {
         return events;
     }
 
-    public void setEvents(Event[] events) {
+    public void setEvents(EventSimple[] events) {
         this.events = events;
+    }
+
+    public StorySimple[] getStories() {
+        return stories;
+    }
+
+    public void setStories(StorySimple[] stories) {
+        this.stories = stories;
     }
 }

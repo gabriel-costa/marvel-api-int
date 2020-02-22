@@ -1,20 +1,22 @@
-package entity;
+package bean.simple;
 
 import java.util.Date;
 
-public class Story extends Entity{
+public class ComicSimple {
     private Integer id;
     private String title;
     private String description;
     private Date modified;
     private String resourceURI;
+    private Integer pageCount;
 
-    public Story(Integer id, String title, String description, Date modified, String resourceURI) {
+    public ComicSimple(Integer id, String title, String description, Date modified, String resourceURI, Integer pageCount) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.modified = modified;
         this.resourceURI = resourceURI;
+        this.pageCount = pageCount;
     }
 
     public Integer getId() {
@@ -55,5 +57,13 @@ public class Story extends Entity{
 
     public void setResourceURI(String resourceURI) {
         this.resourceURI = resourceURI;
+    }
+
+    public Integer getPageCount() {
+        return pageCount;
+    }
+
+    public void setPageCount(Integer pageCount) {
+        this.pageCount = pageCount;
     }
 }
