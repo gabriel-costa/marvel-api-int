@@ -13,10 +13,6 @@ import java.sql.SQLException;
 public class CharacterServlet extends HttpServlet {
 
     private static final CharacterService characterService = new CharacterService();
-    private static final ComicService comicService = new ComicService();
-    private static final EventService eventService = new EventService();
-    private static final SeriesService seriesService = new SeriesService();
-    private static final StoryService storyService = new StoryService();
 
     private Gson gson = new Gson();
 
@@ -34,16 +30,16 @@ public class CharacterServlet extends HttpServlet {
                 if(req.getParameter("list") != null) {
                     switch (req.getParameter("list")) {
                         case "comics":
-                            writer.print(gson.toJson(comicService.getComicsByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(characterService.getComicsByCharacterId(new Integer(req.getParameter("id")))));
                             break;
                         case "events":
-                            writer.print(gson.toJson(eventService.getEventsByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(characterService.getEventsByCharacterId(new Integer(req.getParameter("id")))));
                             break;
                         case "series":
-                            writer.print(gson.toJson(seriesService.getSeriesByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(characterService.getSeriesByCharacterId(new Integer(req.getParameter("id")))));
                             break;
                         case "stories":
-                            writer.print(gson.toJson(storyService.getStoriesByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(characterService.getStoriesByCharacterId(new Integer(req.getParameter("id")))));
                             break;
                         default:
                             resp.sendError(400, "Invalid list request!");
@@ -55,14 +51,14 @@ public class CharacterServlet extends HttpServlet {
                 if (req.getParameter("list") != null) {
                     resp.sendError(400, "You're missing character ID!");
                 } else {
-                    characterService.getAllCharacters();
+                    writer.print(gson.toJson(characterService.getAllCharacters()));
                 }
             }
             writer.flush();
         } catch (SQLException e) {
-            resp.sendError(500, e.getMessage()+" Please contact your administrator.");
+            resp.sendError(500, e.getMessage()+" Please contact the administrator.");
         } catch (Exception e) {
-            resp.sendError(500, e.getMessage()+" Something got wrong! Please contact your administrator.");
+            resp.sendError(500, e.getMessage()+" Stranger things happened! Please contact the administrator.");
         }
     }
 }

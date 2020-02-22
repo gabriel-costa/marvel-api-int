@@ -2,7 +2,7 @@ package service;
 
 
 import bean.Character;
-import bean.simple.CharacterSimple;
+import bean.simple.*;
 import dao.CharacterDAO;
 
 import java.sql.SQLException;
@@ -24,20 +24,20 @@ public class CharacterService {
         return characterEntityToBean(characterDAO.getById(id));
     }
 
-    public CharacterSimple[] getCharactersByComicId(int id) {
-        return null;
+    public ComicSimple[] getComicsByCharacterId(int id) throws SQLException {
+        return comicService.getComicsByCharacterId(id);
     }
 
-    public CharacterSimple[] getCharactersBySeriesId(int id) {
-        return null;
+    public EventSimple[] getEventsByCharacterId(int id) throws SQLException {
+        return eventService.getEventsByCharacterId(id);
     }
 
-    public CharacterSimple[] getCharactersByEventId(int id) {
-        return null;
+    public SeriesSimple[] getSeriesByCharacterId(int id) throws SQLException {
+        return seriesService.getSeriesByCharacterId(id);
     }
 
-    public CharacterSimple[] getCharactersByStoryId(int id) {
-        return null;
+    public StorySimple[] getStoriesByCharacterId(int id) throws SQLException {
+        return storyService.getStoriesByCharacterId(id);
     }
 
     private Character[] characterEntityArrayToBeanArray(entity.Character[] entityCharacters) throws SQLException {
