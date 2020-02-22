@@ -9,20 +9,20 @@ public class Character {
     private Date modified;
     private String resourceURI;
     private Comic[] comics;
-    private Story[] stories;
     private Event[] events;
     private Series[] series;
+    private Story[] stories;
 
-    public Character(Integer id, String name, String description, Date modified, String resourceURI, Comic[] comics, Story[] stories, Event[] events, Series[] series) {
+    public Character(Integer id, String name, String description, Date modified, String resourceURI, Comic[] comics, Event[] events, Series[] series, Story[] stories) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.modified = modified;
         this.resourceURI = resourceURI;
         this.comics = comics;
-        this.stories = stories;
         this.events = events;
         this.series = series;
+        this.stories = stories;
     }
 
     public Integer getId() {

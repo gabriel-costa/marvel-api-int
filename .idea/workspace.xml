@@ -2,49 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f7bebdf-b04c-42c5-af57-3b6ba3c5c598" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Comic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Series.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/bean/Story.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/CharacterDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/DAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Character.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Comic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Event.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Series.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Story.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/CharacterService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/configuration/DatabaseConnectionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/ComicDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/EventDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/SeriesDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/StoryDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/ComicService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/EventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/SeriesService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/StoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/kaffa-pre-qualification.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kaffa-pre-qualification.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/Exercise8.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/META-INF/kaffa-pre-qualification.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/TodoList.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/geometric/forms/Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/geometric/forms/Rectangle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise1Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise2Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise3Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise4Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise5Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise6Kt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/main/Exercise7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/kaffa-pre-qualification/tomcatConfigs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/marvel-api-int/MarvelApiServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MarvelApiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MarvelApiServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Image.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Url.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Character.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/CharacterDataContainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/character/CharacterDataWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/comic/ComicList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/comic/ComicSummary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/event/EventList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/event/EventSummary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/series/SeriesList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/series/SeriesSummary.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/story/StoryList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/bean/story/StorySummary.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MarvelApiServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CharacterServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/bean/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/bean/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/CharacterDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/CharacterDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Comic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Comic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Event.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Event.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Series.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Series.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Story.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Story.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/CharacterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/CharacterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,8 +35,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -72,12 +52,16 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/external-libs/postgresql-42.2.10.jar!/" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15136719" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="service" />
+      <recent name="dao" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\gabriel\git-workspace\marvel-api-int\src\main\java\entity" />
       <recent name="C:\Users\gabriel\git-workspace\marvel-api-int" />
@@ -190,10 +174,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="196" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582231643922" />
-    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1582307501415">
+    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser" timestamp="1582320961964">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582307501415" />
+    <state x="765" y="257" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080@0.0.1920.1080" timestamp="1582320961964" />
     <state x="808" y="430" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1582229482345">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -206,37 +190,72 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="288" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582298147028" />
-    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1582249208840">
+    <state x="740" y="295" key="FileChooserDialogImpl" timestamp="1582312332851">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1582249208840" />
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom" timestamp="1582255579296">
+    <state x="740" y="295" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1582312332851" />
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom" timestamp="1582342496069">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
-    <state width="1877" height="295" key="GridCell.Tab.0.center" timestamp="1582255579296">
+    <state width="1877" height="363" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496069" />
+    <state width="1877" height="363" key="GridCell.Tab.0.center" timestamp="1582342496069">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
-    <state width="1877" height="295" key="GridCell.Tab.0.left" timestamp="1582255579296">
+    <state width="1877" height="363" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496069" />
+    <state width="1877" height="363" key="GridCell.Tab.0.left" timestamp="1582342496069">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
-    <state width="1877" height="295" key="GridCell.Tab.0.right" timestamp="1582255579296">
+    <state width="1877" height="363" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496069" />
+    <state width="1877" height="363" key="GridCell.Tab.0.right" timestamp="1582342496069">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1877" height="295" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582255579296" />
-    <state x="440" y="115" key="SettingsEditor" timestamp="1582250032221">
+    <state width="1877" height="363" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496069" />
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom" timestamp="1582342496070">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582250032221" />
-    <state x="656" y="138" width="607" height="804" key="find.popup" timestamp="1582250019175">
+    <state width="1877" height="363" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496070" />
+    <state width="1877" height="363" key="GridCell.Tab.1.center" timestamp="1582342496070">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="656" y="138" width="607" height="804" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582250019175" />
-    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1582252027635">
+    <state width="1877" height="363" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496070" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left" timestamp="1582342496070">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582252027635" />
+    <state width="1877" height="363" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496070" />
+    <state width="1877" height="363" key="GridCell.Tab.1.right" timestamp="1582342496070">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1877" height="363" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1582342496070" />
+    <state x="440" y="115" key="SettingsEditor" timestamp="1582312334872">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="115" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1582312334872" />
+    <state x="690" y="296" key="extract.method.dialog" timestamp="1582321309168">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="690" y="296" key="extract.method.dialog/0.0.1920.1080@0.0.1920.1080" timestamp="1582321309168" />
+    <state x="656" y="138" width="737" height="804" key="find.popup" timestamp="1582311133941">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="656" y="138" width="737" height="804" key="find.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582311133941" />
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup" timestamp="1582311371868">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" width="672" height="677" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582311371868" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1582317591452">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1582317591452" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dao/CharacterDAO.java</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

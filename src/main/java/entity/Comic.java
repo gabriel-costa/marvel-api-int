@@ -10,8 +10,8 @@ public class Comic extends Entity{
     private String resourceURI;
     private Integer pageCount;
     private Integer series;
-    private Integer[] stories;
     private Integer[] events;
+    private Integer[] stories;
 
     public Comic(Integer id, String title, String description, Date modified, String resourceURI, Integer pageCount, Integer series, Integer[] stories, Integer[] events) {
         this.id = id;

@@ -10,11 +10,12 @@ public class Event extends Entity{
     private String resourceURI;
     private Integer nextEvent;
     private Integer previousEvent;
+    private Integer[] characters;
     private Integer[] comics;
     private Integer[] stories;
     private Integer[] series;
 
-    public Event(Integer id, String title, String description, Date modified, String resourceURI, Integer nextEvent, Integer previousEvent, Integer[] comics, Integer[] stories, Integer[] series) {
+    public Event(Integer id, String title, String description, Date modified, String resourceURI, Integer nextEvent, Integer previousEvent, Integer[] characters, Integer[] comics, Integer[] stories, Integer[] series) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -22,6 +23,7 @@ public class Event extends Entity{
         this.resourceURI = resourceURI;
         this.nextEvent = nextEvent;
         this.previousEvent = previousEvent;
+        this.characters = characters;
         this.comics = comics;
         this.stories = stories;
         this.series = series;
@@ -81,6 +83,14 @@ public class Event extends Entity{
 
     public void setPreviousEvent(Integer previousEvent) {
         this.previousEvent = previousEvent;
+    }
+
+    public Integer[] getCharacters() {
+        return characters;
+    }
+
+    public void setCharacters(Integer[] characters) {
+        this.characters = characters;
     }
 
     public Integer[] getComics() {

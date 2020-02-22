@@ -8,10 +8,10 @@ public class Series extends Entity{
     private String description;
     private Date modified;
     private String resourceURI;
+    private Integer[] characters;
     private Integer[] comics;
     private Integer[] stories;
     private Integer[] events;
-    private Integer[] characters;
 
     public Series(Integer id, String title, String description, Date modified, String resourceURI, Integer[] comics, Integer[] stories, Integer[] events, Integer[] characters) {
         this.id = id;

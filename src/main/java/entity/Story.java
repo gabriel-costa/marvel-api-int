@@ -8,8 +8,8 @@ public class Story extends Entity{
     private String description;
     private Date modified;
     private String resourceURI;
-    private Integer[] comics;
     private Integer[] characters;
+    private Integer[] comics;
     private Integer[] events;
     private Integer[] series;
 

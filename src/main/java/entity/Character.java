@@ -8,21 +8,13 @@ public class Character extends Entity{
     private String description;
     private Date modified;
     private String resourceURI;
-    private Integer[] comics;
-    private Integer[] stories;
-    private Integer[] events;
-    private Integer[] series;
 
-    public Character(Integer id, String name, String description, Date modified, String resourceURI, Integer[] comics, Integer[] stories, Integer[] events, Integer[] series) {
+    public Character(Integer id, String name, String description, Date modified, String resourceURI) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.modified = modified;
         this.resourceURI = resourceURI;
-        this.comics = comics;
-        this.stories = stories;
-        this.events = events;
-        this.series = series;
     }
 
     public Integer getId() {
@@ -63,37 +55,5 @@ public class Character extends Entity{
 
     public void setResourceURI(String resourceURI) {
         this.resourceURI = resourceURI;
-    }
-
-    public Integer[] getComics() {
-        return comics;
-    }
-
-    public void setComics(Integer[] comics) {
-        this.comics = comics;
-    }
-
-    public Integer[] getStories() {
-        return stories;
-    }
-
-    public void setStories(Integer[] stories) {
-        this.stories = stories;
-    }
-
-    public Integer[] getEvents() {
-        return events;
-    }
-
-    public void setEvents(Integer[] events) {
-        this.events = events;
-    }
-
-    public Integer[] getSeries() {
-        return series;
-    }
-
-    public void setSeries(Integer[] series) {
-        this.series = series;
     }
 }

@@ -2,9 +2,11 @@ package dao;
 
 import entity.Entity;
 
+import java.sql.SQLException;
+
 public interface DAO {
 
-    Entity getById(Integer id);
+    Entity getById(int id);
 
-    Entity getAll();
+    Entity[] getAll() throws SQLException;
 }

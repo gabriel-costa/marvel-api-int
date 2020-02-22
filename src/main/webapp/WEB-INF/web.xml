@@ -3,11 +3,11 @@
 <web-app version="3.1"
          metadata-complete="false">
     <servlet>
-        <servlet-name>MarvelApiServlet</servlet-name>
-        <servlet-class>MarvelApiServlet</servlet-class>
+        <servlet-name>CharacterServlet</servlet-name>
+        <servlet-class>CharacterServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MarvelApiServlet</servlet-name>
+        <servlet-name>CharacterServlet</servlet-name>
         <url-pattern>/characters</url-pattern>
     </servlet-mapping>
 </web-app>
