@@ -1,11 +1,11 @@
 # marvel-api-integration
 
 <h2>Instructions</h2>
-- This repository is an integration with marvel-api, but contains only characters API.
-- All the libraries used are in the directory "/external-libs".
-- I used a Tomcat 8.5.50 as a server, and Smart Tomcat to configure it in Intellij the configs to it are <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/tomcatConfigs.png">here</a>.
-- I used Postgres as the database, to create the tables, just run this <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/createDatabaseScript.sql">script</a>.
-- After the inserts, integrating the libraries, and configuring Tomcat, you can test it with the endpoints described below.
+- This repository is an integration with marvel-api, but contains only characters API.<br>
+- All the libraries used are in the directory "/external-libs".<br>
+- I used a Tomcat 8.5.50 as a server, and Smart Tomcat to configure it in Intellij the configs to it are <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/tomcatConfigs.png">here</a>.<br>
+- I used Postgres as the database, to create the tables, just run this <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/createDatabaseScript.sql">script</a>.<br>
+- After the inserts, integrating the libraries, and configuring Tomcat, you can test it with the endpoints described below.<br>
 
 <h2>Endpoints</h2>
 <h3><b>GET /marvel-api-int/characters/</b></h3>
