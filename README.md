@@ -1,9 +1,14 @@
 # marvel-api-integration
--This repository is an integration with marvel-api, but contains only characters API.
+
+<h2>Instructions</h2>
+- This repository is an integration with marvel-api, but contains only characters API.
+- All the libraries used are in the directory "/external-libs".
+- I used a Tomcat 8.5.50 as a server, and Smart Tomcat to configure it in Intellij the configs to it are <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/tomcatConfigs.png">here</a>.
+- I used Postgres as the database, to create the tables, just run this <a href="https://github.com/gabriel-costa/marvel-api-int/blob/master/src/main/resources/createDatabaseScript.sql">script</a>.
+- After the inserts, integrating the libraries, and configuring Tomcat, you can test it with the endpoints described below.
 
 <h2>Endpoints</h2>
-
-<h3><b>/marvel-api-int/characters/</b></h3>
+<h3><b>GET /marvel-api-int/characters/</b></h3>
 Fetches lists of all comic characters registered.
 
 <h4>Response Class</h4>
@@ -52,7 +57,7 @@ modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
 
-<h3><b>/marvel-api-int/characters/{characterId}</b></h3>
+<h3><b>GET  /marvel-api-int/characters/{characterId}</b></h3>
 Fetches lists of the comic character requested.
 
 | Parameter | Description | Parameter Type | Data Type |
@@ -105,7 +110,7 @@ modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
 
-<h3><b>/marvel-api-int/characters/{characterId}/{listType}</b></h3>
+<h3><b>GET  /marvel-api-int/characters/{characterId}/{listType}</b></h3>
 Fetches the list requested for the character requested. If you query to "comics", 
 then the other lists in the ListResponse will be null.
 
