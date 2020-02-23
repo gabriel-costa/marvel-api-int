@@ -8,6 +8,6 @@
     </servlet>
     <servlet-mapping>
         <servlet-name>servlet.CharacterServlet</servlet-name>
-        <url-pattern>/characters</url-pattern>
+        <url-pattern>/characters/*</url-pattern>
     </servlet-mapping>
 </web-app>

@@ -1,5 +1,6 @@
 package servlet;
 
+import bean.ListResponse;
 import com.google.gson.Gson;
 import service.*;
 
@@ -25,30 +26,39 @@ public class CharacterServlet extends HttpServlet {
         PrintWriter writer = resp.getWriter();
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
+        String[] pathParts = req.getPathInfo().split("/");
+        String characterId = null;
+        String list = null;
+        if(pathParts.length > 1) {
+            characterId = pathParts[1];
+            if(pathParts.length > 2) {
+                list = pathParts[2];
+            }
+        }
         try {
-            if (req.getParameter("id") != null) {
-                if(req.getParameter("list") != null) {
-                    switch (req.getParameter("list")) {
+            if (characterId != null) {
+                if(list != null) {
+                    switch (list) {
                         case "comics":
-                            writer.print(gson.toJson(characterService.getComicsByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(new ListResponse(characterService.getComicsByCharacterId(new Integer(characterId)), null, null, null)));
                             break;
                         case "events":
-                            writer.print(gson.toJson(characterService.getEventsByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(new ListResponse(null, characterService.getEventsByCharacterId(new Integer(characterId)), null, null)));
                             break;
                         case "series":
-                            writer.print(gson.toJson(characterService.getSeriesByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(new ListResponse(null, null, characterService.getSeriesByCharacterId(new Integer(characterId)), null)));
                             break;
                         case "stories":
-                            writer.print(gson.toJson(characterService.getStoriesByCharacterId(new Integer(req.getParameter("id")))));
+                            writer.print(gson.toJson(new ListResponse(null, null, null, characterService.getStoriesByCharacterId(new Integer(characterId)))));
                             break;
                         default:
                             resp.sendError(400, "Invalid list request!");
                     }
                 } else {
-                    writer.print(gson.toJson(characterService.getCharacterById(new Integer(req.getParameter("id")))));
+                    writer.print(gson.toJson(characterService.getCharacterById(new Integer(characterId))));
                 }
             } else {
-                if (req.getParameter("list") != null) {
+                if (list != null) {
                     resp.sendError(400, "You're missing character ID!");
                 } else {
                     writer.print(gson.toJson(characterService.getAllCharacters()));
@@ -56,7 +66,7 @@ public class CharacterServlet extends HttpServlet {
             }
             writer.flush();
         } catch (SQLException e) {
-            resp.sendError(500, e.getMessage()+" Please contact the administrator.");
+            resp.sendError(500, e.getMessage()+" Database problems! Please contact the administrator.");
         } catch (Exception e) {
             resp.sendError(500, e.getMessage()+" Stranger things happened! Please contact the administrator.");
         }
