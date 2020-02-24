@@ -161,6 +161,8 @@ resourceURI (string): The canonical URL identifier for this resource<br>
 
 | HTTP Status Code | Reason |
 | --- | --- |
+| 400 | Invalid list request. |
+| 400 | Invalid character ID. |
 | 404 | Character not found. |
-| 400 | List requested doesn't supported. |
-| 500 | Problems with database connection or unmapped server error. |
+| 500 | Problems with database connection. |
+| 500 | Default error. |

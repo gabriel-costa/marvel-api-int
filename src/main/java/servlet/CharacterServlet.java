@@ -36,6 +36,12 @@ public class CharacterServlet extends HttpServlet {
         String list = null;
         if(pathParts.length > 1) {
             characterId = pathParts[1];
+            try {
+                Integer.parseInt(characterId);
+            } catch (NumberFormatException e) {
+                resp.sendError(400, "Invalid character ID!");
+                return;
+            }
             if(pathParts.length > 2) {
                 list = pathParts[2];
             }
