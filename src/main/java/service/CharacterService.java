@@ -49,15 +49,18 @@ public class CharacterService {
     }
 
     private Character characterEntityToBean(entity.Character entityCharacter) throws SQLException {
-        return new Character(new CharacterSimple(entityCharacter.getId(),
-                entityCharacter.getName(),
-                entityCharacter.getDescription(),
-                entityCharacter.getModified(),
-                entityCharacter.getResourceURI()),
-                comicService.getComicsByCharacterId(entityCharacter.getId()),
-                eventService.getEventsByCharacterId(entityCharacter.getId()),
-                seriesService.getSeriesByCharacterId(entityCharacter.getId()),
-                storyService.getStoriesByCharacterId(entityCharacter.getId())
-        );
+        if (entityCharacter != null) {
+            return new Character(new CharacterSimple(entityCharacter.getId(),
+                    entityCharacter.getName(),
+                    entityCharacter.getDescription(),
+                    entityCharacter.getModified(),
+                    entityCharacter.getResourceURI()),
+                    comicService.getComicsByCharacterId(entityCharacter.getId()),
+                    eventService.getEventsByCharacterId(entityCharacter.getId()),
+                    seriesService.getSeriesByCharacterId(entityCharacter.getId()),
+                    storyService.getStoriesByCharacterId(entityCharacter.getId())
+            );
+        }
+        return null;
     }
 }

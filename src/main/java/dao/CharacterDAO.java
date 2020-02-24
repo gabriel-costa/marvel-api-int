@@ -16,13 +16,16 @@ public class CharacterDAO implements DAO {
         try {
             Statement statement = DatabaseConnectionConfiguration.conn.createStatement();
             ResultSet resultSet = statement.executeQuery("SELECT * FROM public.character where id=" + id);
-            resultSet.next();
-            character = new Character(
-                    resultSet.getInt("id"),
-                    resultSet.getString("name"),
-                    resultSet.getString("description"),
-                    resultSet.getDate("modified"),
-                    resultSet.getString("resourceURI"));
+            if(resultSet.next()) {
+                character = new Character(
+                        resultSet.getInt("id"),
+                        resultSet.getString("name"),
+                        resultSet.getString("description"),
+                        resultSet.getDate("modified"),
+                        resultSet.getString("resourceURI"));
+            } else {
+                character = null;
+            }
         } catch (SQLException e) {
             System.out.println("Failed on getById characters query!");
             throw new SQLException("Failed on getById characters query!", e);

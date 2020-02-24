@@ -1,6 +1,11 @@
 package servlet;
 
+import bean.Character;
 import bean.ListResponse;
+import bean.simple.ComicSimple;
+import bean.simple.EventSimple;
+import bean.simple.SeriesSimple;
+import bean.simple.StorySimple;
 import com.google.gson.Gson;
 import service.*;
 
@@ -40,22 +45,47 @@ public class CharacterServlet extends HttpServlet {
                 if(list != null) {
                     switch (list) {
                         case "comics":
-                            writer.print(gson.toJson(new ListResponse(characterService.getComicsByCharacterId(new Integer(characterId)), null, null, null)));
+                            ComicSimple[] comics = characterService.getComicsByCharacterId(new Integer(characterId));
+                            if(comics.length > 0) {
+                                writer.print(gson.toJson(new ListResponse(comics, null, null, null)));
+                            } else {
+                                resp.sendError(404, "Character not found!");
+                            }
                             break;
                         case "events":
-                            writer.print(gson.toJson(new ListResponse(null, characterService.getEventsByCharacterId(new Integer(characterId)), null, null)));
+                            EventSimple[] events = characterService.getEventsByCharacterId(new Integer(characterId));
+                            if(events.length > 0) {
+                                writer.print(gson.toJson(new ListResponse(null, events, null, null)));
+                            } else {
+                                resp.sendError(404, "Character not found!");
+                            }
                             break;
                         case "series":
-                            writer.print(gson.toJson(new ListResponse(null, null, characterService.getSeriesByCharacterId(new Integer(characterId)), null)));
+                            SeriesSimple[] series = characterService.getSeriesByCharacterId(new Integer(characterId));
+                            if(series.length > 0) {
+                                writer.print(gson.toJson(new ListResponse(null, null, series, null)));
+                            } else {
+                                resp.sendError(404, "Character not found!");
+                            }
                             break;
                         case "stories":
-                            writer.print(gson.toJson(new ListResponse(null, null, null, characterService.getStoriesByCharacterId(new Integer(characterId)))));
+                            StorySimple[] stories = characterService.getStoriesByCharacterId(new Integer(characterId));
+                            if(stories.length > 0) {
+                                writer.print(gson.toJson(new ListResponse(null, null, null, stories)));
+                            } else {
+                                resp.sendError(404, "Character not found!");
+                            }
                             break;
                         default:
                             resp.sendError(400, "Invalid list request!");
                     }
                 } else {
-                    writer.print(gson.toJson(characterService.getCharacterById(new Integer(characterId))));
+                    Character character = characterService.getCharacterById(new Integer(characterId));
+                    if (character != null) {
+                        writer.print(gson.toJson(character));
+                    } else {
+                        resp.sendError(404, "Character not found!");
+                    }
                 }
             } else {
                 if (list != null) {

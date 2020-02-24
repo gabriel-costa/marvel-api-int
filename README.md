@@ -60,6 +60,8 @@ resourceURI (string): The canonical URL identifier for this resource<br>
 <h3><b>GET  /marvel-api-int/characters/{characterId}</b></h3>
 Fetches lists of the comic character requested.
 
+<h4>Parameters</h4>
+
 | Parameter | Description | Parameter Type | Data Type |
 | --- | --- | --- | --- |
 | id | The character ID | path | int |
@@ -109,10 +111,16 @@ description (string): The preferred description of the story,<br>
 modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
+<h4>Error Status Codes</h4>
 
+| HTTP Status Code | Reason |
+| --- | --- |
+| 404 | Character not found. |
 <h3><b>GET  /marvel-api-int/characters/{characterId}/{listType}</b></h3>
 Fetches the list requested for the character requested. If you query to "comics", 
 then the other lists in the ListResponse will be null.
+
+<h4>Parameters</h4>
 
 | Parameter | Description | Parameter Type | Data Type |
 | --- | --- | --- | --- |
@@ -154,3 +162,8 @@ description (string): The preferred description of the story,<br>
 modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
+<h4>Error Status Codes</h4>
+
+| HTTP Status Code | Reason |
+| --- | --- |
+| 404 | Character not found. |
