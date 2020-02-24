@@ -111,11 +111,6 @@ description (string): The preferred description of the story,<br>
 modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
-<h4>Error Status Codes</h4>
-
-| HTTP Status Code | Reason |
-| --- | --- |
-| 404 | Character not found. |
 <h3><b>GET  /marvel-api-int/characters/{characterId}/{listType}</b></h3>
 Fetches the list requested for the character requested. If you query to "comics", 
 then the other lists in the ListResponse will be null.
@@ -162,8 +157,10 @@ description (string): The preferred description of the story,<br>
 modified (Date): The date the resource was most recently modified,<br>
 resourceURI (string): The canonical URL identifier for this resource<br>
 }<br>
-<h4>Error Status Codes</h4>
+<h2>Error Status Codes</h2>
 
 | HTTP Status Code | Reason |
 | --- | --- |
 | 404 | Character not found. |
+| 400 | List requested doesn't supported. |
+| 500 | Problems with database connection or unmapped server error. |
