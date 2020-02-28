@@ -7,6 +7,14 @@ create table character(
    resourceURI VARCHAR (50) NOT null
 );
 
+create table series(
+   id serial PRIMARY KEY,
+   title VARCHAR (50) NOT NULL,
+   description VARCHAR (50) NOT null,
+   modified date NOT null,
+   resourceURI VARCHAR (50) NOT null
+);
+
 create table comic(
    id serial PRIMARY KEY,
    title VARCHAR (50) NOT NULL,
@@ -34,14 +42,6 @@ create table event(
 );
 
 create table story(
-   id serial PRIMARY KEY,
-   title VARCHAR (50) NOT NULL,
-   description VARCHAR (50) NOT null,
-   modified date NOT null,
-   resourceURI VARCHAR (50) NOT null
-);
-
-create table series(
    id serial PRIMARY KEY,
    title VARCHAR (50) NOT NULL,
    description VARCHAR (50) NOT null,
@@ -109,4 +109,3 @@ insert into character_event values(1, 3);
 insert into story values(1, 'Acabou a criatividade', 'Acabou mesmo, não sou nerd da marvel', '2020-02-22', 'https://developer.marvel.com/docs#!/public/');
 
 insert into character_story values(1, 1);
-
