@@ -86,7 +86,7 @@ create table character_series(
 );
 
 -------------------------------------- INSERTS --------------------------------------------
-insert into "character" values(1,'Hulk','… bem verde','1962-05-01', 'https://en.wikipedia.org/wiki/Hulk');
+insert into "character" values(1,'Hulk','√â bem verde','1962-05-01', 'https://en.wikipedia.org/wiki/Hulk');
 
 insert into series values(1, 'The Incredible Hulk', 'The Hulk and his alter ego Dr. Bruce Banner', '1962-05-01', 'en.wikipedia.org/wiki/The_Incredible_Hulk');
 
@@ -94,13 +94,11 @@ insert into comic values(1, 'The Incredible Hulk #1', 'First of the series', '19
 
 insert into character_comic values(1, 1);
 
-insert into series_comic values(1, 1);
-
 insert into character_series values(1, 1);
 
-insert into "event" values(1, 'Invas„o da terra', 'Terra invadida por aliens', '2012-03-10', 'https://www.google.com.br/');
-insert into "event" values(2, 'VitÛria dos Avengers', 'Aliens foram derrotados pelos Avengers', '2012-03-11', 'https://www.google.com.br/');
-insert into "event" values(3, 'Reuni„o dos Avengers', 'Se conhecem e viram amigos', '2012-03-09', 'https://www.google.com.br/');
+insert into "event" values(1, 'Invas√£o da terra', 'Terra invadida por aliens', '2012-03-10', 'https://www.google.com.br/');
+insert into "event" values(2, 'Vit√≥ria dos Avengers', 'Aliens foram derrotados pelos Avengers', '2012-03-11', 'https://www.google.com.br/');
+insert into "event" values(3, 'Reuni√£o dos Avengers', 'Se conhecem e viram amigos', '2012-03-09', 'https://www.google.com.br/');
 update "event" set previous_event=3 where id=1;
 update "event" set next_event=2 where id=1;
 
@@ -108,7 +106,7 @@ insert into character_event values(1, 1);
 insert into character_event values(1, 2);
 insert into character_event values(1, 3);
 
-insert into story values(1, 'Acabou a criatividade', 'Acabou mesmo, n„o sou nerd da marvel', '2020-02-22', 'https://developer.marvel.com/docs#!/public/');
+insert into story values(1, 'Acabou a criatividade', 'Acabou mesmo, n√£o sou nerd da marvel', '2020-02-22', 'https://developer.marvel.com/docs#!/public/');
 
 insert into character_story values(1, 1);
 
